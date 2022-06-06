@@ -1,4 +1,4 @@
-const img = document.querySelcetor(".img");
+const img = document.querySelector(".img");
 const loading = document.querySelector(".loading-text");
 
 let load = 0;
@@ -11,7 +11,7 @@ function blurring() {
     clearInterval(int);
   }
 
-  loading.innerText = `${load}`;
+  loading.innerText = `${load}%`;
   loading.style.opacity = scale(load, 0, 100, 1, 0);
   img.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
 }

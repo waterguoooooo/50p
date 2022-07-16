@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #fff;
+    color: cornflowerblue;
+    padding: 15px 20px;
+    border: 0;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out
+}
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.insects-list li {
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.choose-insect-btn:hover {
+    background-color: #fff;
+    color: cornflowerblue;
+}
+
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+.game-container {
+    position: relative;
+}
+
+.time, 
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.message {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px auto;
+    top: 0px;
+    left: 50%;
+    opacity: 0;
+    width: 100%;
+    transform: translate(-50%,-150%);
+    transition: transform 0.5s ease-in;
+    z-index: 100;
+}
+
+.message.visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+}
+
+.insect {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+    width: 100px;
+    height: 100px;
+  }

@@ -1,0 +1,64 @@
+@import url('https:fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0%;
+}
+
+.container {
+    border-radius: 10px;
+    border: 3px solid #000;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+.num-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.code {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
+    margin: 1%;
+    caret-color: transparent;
+    width: 75px;
+    height: 80px;
+}
+
+.code::-webkit-inner-spin-button, 
+.code::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:valid {
+    border-color: #3498db;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.notice {
+    background-color: #eaeaea;
+    color: #777;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    max-width: 400px;
+    line-height: 20px;
+}

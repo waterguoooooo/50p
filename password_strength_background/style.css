@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background {
+    background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b')
+    no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 30px;
+    border-radius: 5px;
+    height: 400px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin: 20px 10px 5px;
+}
+
+small {
+    opacity: 0.8;
+    font-size: 0.875rem;
+    margin: 5px auto 20px;
+}
+
+label {
+    text-align: left;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.enter-email, .enter-password {
+    width: 100%;
+    border: 1px solid grey 0.1;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 5px auto 10px;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
